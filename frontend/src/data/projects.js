@@ -53,23 +53,58 @@ export const projects = [
       "https://github.com/xolo177013/Bytes_Jobs",
   },
 
-  /*
-   * Add your next real project here.
-   *
-   * Example:
-   *
-   * {
-   *   slug: "my-project",
-   *   number: "02",
-   *   category: "AI / FULL-STACK",
-   *   title: "Project title",
-   *   summary: "Short description...",
-   *   problem: "Problem...",
-   *   solution: "Solution...",
-   *   stack: ["React", "Django", "PostgreSQL"],
-   *   architecture: [],
-   *   liveUrl: "https://...",
-   *   githubUrl: "https://github.com/..."
-   * }
-   */
+  {
+    slug: "Zylo",
+    number: "02",
+    category: "E-COMMERCE / FULL-STACK",
+
+    title:
+      "A production-structured e-commerce platform with a complete shopping and order workflow.",
+
+    summary:
+      "A full-stack e-commerce application connecting a React storefront to a Node.js, Express and MongoDB API, with JWT authentication, persistent carts, checkout, mock payments, order tracking and admin controls.",
+
+    problem:
+      "Basic storefronts often separate product browsing from the operational workflows behind it — authentication, persistent carts, payments, inventory and order management. Zylo brings the complete customer and admin flow into one connected system.",
+
+    solution:
+      "Zylo combines a React and Tailwind CSS storefront with an Express REST API and MongoDB persistence, providing authenticated shopping, server-side cart management, checkout with a simulated payment gateway, order tracking and role-based administration.",
+
+    stack: [
+      "React",
+      "Node.js / Express",
+      "MongoDB / Mongoose",
+      "JWT / bcrypt",
+    ],
+
+    architecture: [
+      {
+        title: "Authentication",
+        text:
+          "JWT-based signup and login with bcrypt password hashing and role-based access control for customer and admin accounts.",
+      },
+      {
+        title: "Catalog",
+        text:
+          "MongoDB-backed product catalog with keyword search, category and price filtering, sorting, pagination and individual product pages.",
+      },
+      {
+        title: "Cart & Checkout",
+        text:
+          "Server-persisted carts with live stock-aware quantities, followed by checkout and a simulated payment gateway supporting successful, failed and retry payment flows.",
+      },
+      {
+        title: "Orders & Admin",
+        text:
+          "Customer order history and status timelines combined with an admin dashboard for product management and advancing order fulfillment statuses.",
+      },
+    ],
+
+    liveUrl:
+      "https://zylo-kappa.vercel.app/",
+
+    githubUrl:
+      "https://github.com/xolo177013/Zylo",
+  },
+
 ];
