@@ -279,7 +279,16 @@ img,svg{max-width:100%}
 .browser-bar{height:32px;display:flex;align-items:center;gap:5px;padding:0 12px;border-bottom:1px solid #bcb7ae}
 .browser-bar>span{width:6px;height:6px;flex:0 0 6px;border:1px solid #777;border-radius:50%}
 .browser-bar em{margin-left:auto;max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#777;font:700 8px "DM Mono",monospace;font-style:normal}
-.browser-body{height:calc(100% - 32px);display:grid;min-width:0}
+.browser-body{height:calc(100% - 32px);position:relative;overflow:hidden;background:#fff}
+.live-preview{width:100%;height:100%}
+.live-preview iframe{
+  position:absolute;top:0;left:0;
+  width:250%;height:250%;
+  border:0;pointer-events:none;
+  transform:scale(.4);
+  transform-origin:0 0;
+  background:#fff;
+}
 .commerce-body{grid-template-columns:160px minmax(0,1fr)}
 .docs-body{grid-template-columns:130px minmax(0,1fr)}
 .booking-body{grid-template-columns:minmax(0,1fr) 210px}
@@ -311,7 +320,8 @@ img,svg{max-width:100%}
 
 /* Architecture */
 .architecture{background:var(--paper2)}
-.arch-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:100px;align-items:start}
+.arch-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:100px;align-items:start;}
+.arch-grid .display{overflow-wrap:break-word}
 .system{border-top:1px solid var(--ink);margin-top:24px}
 .sys-row{display:grid;grid-template-columns:110px minmax(0,1fr);gap:20px;border-bottom:1px solid var(--line);padding:18px 0;position:relative}
 .sys-row .num{font:700 9px "DM Mono",monospace;color:var(--accent)}
