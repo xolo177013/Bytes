@@ -192,6 +192,7 @@ img,svg{max-width:100%}
 .button.alt{background:transparent;color:var(--ink)}
 .button.alt:hover{background:var(--ink);color:var(--paper)}
 .kicker,.section-kicker,.project-type,.hero-stamp,.build-label{font:700 15px/1.2 "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase}
+.project-type {grid-column: 1 / -1;}
 .kicker{color:var(--accent);display:flex;gap:8px;align-items:center}
 .kicker:before{content:"";width:7px;height:7px;background:var(--accent);border-radius:50%;flex:0 0 auto}
 

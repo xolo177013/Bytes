@@ -53,14 +53,16 @@ export default function Work() {
             {projects.map((project, index) => (
               <Reveal key={project.slug}>
                 <article className={`project ${index % 2 ? "reverse" : ""}`}>
+                  
+                  <div className="project-type">
+                      {project.number} / {project.category}
+                  </div>
+
                   <div className="project-visual">
                     <ProjectPreview project={project} />
                   </div>
 
                   <div className="project-copy">
-                    <div className="project-type">
-                      {project.number} / {project.category}
-                    </div>
 
                     <h2>{project.title}</h2>
 
