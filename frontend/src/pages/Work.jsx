@@ -12,9 +12,9 @@ export default function Work() {
         <div className="intro-grid">
           <Reveal>
             <h1 className="display">
-              Show the work.
-              <br />
-              Explain the decisions.
+              Systems built
+                <br />
+              for real use.
             </h1>
           </Reveal>
 
@@ -30,24 +30,6 @@ export default function Work() {
       <section className="work-section">
         <div className="shell">
           <div className="section-kicker">01 / SELECTED PROJECTS</div>
-
-          <div className="work-intro">
-            <Reveal>
-              <h2 className="display">
-                Systems built
-                <br />
-                for real use.
-              </h2>
-            </Reveal>
-
-            <Reveal>
-              <p>
-                Full-stack applications, AI workflows, SaaS products and
-                business systems — presented as technical case studies rather
-                than simple project cards.
-              </p>
-            </Reveal>
-          </div>
 
           <div className="project-stack">
             {projects.map((project, index) => (
